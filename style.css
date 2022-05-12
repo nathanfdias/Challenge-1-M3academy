@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+:root{
+    font-size: 62.5%
+}
+/*================HEADER============================*/
+.header{
+    background-color: black;
+    justify-content: center;
+    display: flex;
+    padding: 2.8rem 0;
+}
+
+.header-logo{
+    display: block;
+    width: 100%;
+}
+
+.main-notebook, 
+.middle-banner{
+    width: 100%;
+    display: block;
+}
+/*==============MAIN=========================*/
+
+.top-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 0 9.6rem;
+    text-align: center;
+}
+
+.top-section-txt{
+    max-width: 76.6rem;
+}
+
+.top-section-banner{
+    padding-top: 7.65rem;
+}
+
+.top-section-subtitle{
+    font-style: normal;
+    font-weight: normal;
+    font-size:3.2rem;
+    line-height:4rem;
+    text-transform: uppercase;
+}
+
+.top-section-title{
+    font-weight: 500;
+    margin-bottom: 2.4rem;
+    font-size: 4.8rem;
+    text-transform: uppercase;
+}
+
+.top-section-description{
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+}
+
+.top-cards{
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 2rem;
+    justify-content: center;
+    padding: 7.4rem 0;
+}
+
+.top-card123{
+    background-color: white;
+    box-shadow: 0px 0.4rem 2rem rgba(0, 0, 0, 0.23);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.6rem 2.6rem 3.4rem;
+}
+
+.top-card-img{
+    display: block;
+    margin-bottom: 2.6rem;
+}
+
+.top-card-txt{
+    max-width:30rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+    
+}
+
+.middle-banners {
+    background: #E0E0E0;
+}
+
+.middle-banner-wrapper {
+    display: flex;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    top: 6rem;
+    margin-inline: 9.2rem;
+}
+
+.middle-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.middle-banner-desktop {
+    display: block;
+    width: 100%;
+}
+
+.bottom-cards{
+    background-color: #ffffff;
+    margin-top: 26rem;
+    margin-inline: 7.2rem;
+}
+
+.bottom-card123{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.6rem 3.2rem 6.6rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+
+    max-height: 40.6rem;
+
+}
+
+.bottom-card-txt{
+    max-width: 36.8rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center; 
+}
+
+.bottom-card-img{
+    display: block;
+    margin-bottom: 14px;
+}
+
+
+.bottom-card-wrapper{
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    top: -60px;
+}
+
+.bottom-infocard{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 27.6rem 0 10.4rem;
+}
+
+.bottom-infocard-img{
+    margin-top:3.2rem ;
+    max-width: 132rem;
+    max-height: 27rem;
+}
+
+.bottom-infocard-txt{
+    max-width: 55rem;
+    text-align: center;
+}
+
+.bottom-infocard-title{
+    margin-bottom: 1.8rem;
+    line-height: 1;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.bottom-infocard-description{
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+}
+
+/*=================FOOTER =====================*/
+
+.page-footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.8rem 0;
+    position: relative;
+}
+
+.footer-txt{
+    font-size: 1rem;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    color: #BDBDBD;
+}
+
+.footer-icons{
+    display: flex;
+    list-style: none; 
+    margin-bottom: 1.6rem;
+}
+
+.footer-icon123{
+    margin: 0 0.8rem;
+}
+
+/*=================RESPONSIVE=====================*/
+
+@media screen and (max-width: 414px) {
+
+    .main-notebook,
+    .middle-banner-desktop,
+    .bottom-infocard-img {
+        display: none;
+    }
+
+    .main-banner-mobile{
+        width: 100%;
+    }
+
+    .top-section-banner{
+        width:80%;
+    }
+
+    .bottom-card-txt{
+        font-size: 1rem;
+    }
+
+    .bottom-infocard{
+        display: flex;
+        gap: 2.5rem;
+        flex-direction: column;
+
+        position: relative;
+        top: -4rem;
+    }
+
+    .bottom-infocard-img-mobile{
+        width: 100%;
+    }
+
+    .footer-txt{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 415px) {
+
+    .main-banner-mobile,
+    .middle-banner-mobile,
+    .bottom-infocard-img-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-cards{
+        grid-template-columns: 1fr;
+        padding: 3.6rem 1.6rem;
+    }
+
+    .middle-banner-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'A B'
+        'C C';
+        margin-inline: 2.3rem;
+    }
+
+    .middle-banner-mobile {
+        width: 100%;
+    }
+
+    #part-1 {
+        grid-area: A;
+    }
+
+    #part-2 {
+        grid-area: B;
+    }
+
+    #part-3 {
+        grid-area: C;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1200px) {
+    .top-cards {
+        grid-template-columns: repeat(2, max-content);
+    }
+
+    .middle-banner-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        'A B'
+        'C C';
+
+        margin-left: 2.3rem;
+        margin-right: 2.3rem;
+    }
+
+    #part-1 {
+        grid-area: A;
+    }
+
+    #part-2 {
+        grid-area: B;
+    }
+
+    #part-3 {
+        grid-area: C;
+    }
+
+    .bottom-card-wrapper {
+        display: grid;
+        margin-inline: 2.3rem;
+        grid-template-columns: repeat(2, max-content);
+    }
+
+    .bottom-infocard-img {
+        width: 100rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .bottom-card-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-infocard-img{
+        margin-bottom: 10rem;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1850px){
+    .bottom-card-wrapper {
+        display: grid;
+        margin-inline: 2.3rem;
+        grid-template-columns: repeat(2, max-content);
+    }
+    .bottom-infocard-img {
+        width: 100rem;
+    }
+}
